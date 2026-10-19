@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects Showcase — Marko Idžan</title>
+    <meta name="description" content="Every website and project built by Marko Idžan, in one place.">
+    <meta name="author" content="Marko Idžan">
+    <meta property="og:title" content="Projects Showcase — Marko Idžan">
+    <meta property="og:description" content="Every website and project built by Marko Idžan, in one place.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Apply saved / system theme before first paint to avoid a flash -->
+    <script>
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || (!t && matchMedia("(prefers-color-scheme: dark)").matches))
+          document.documentElement.classList.add("dark");
+      } catch (e) {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="https://idzan.hr" class="logo">Marko <span>Idžan</span></a>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="sun">☀</span>
+          <span class="moon">☾</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <p class="kicker">Portfolio</p>
+        <h1>Every project<br>I've ever built.</h1>
+        <p class="lead">Websites, tools and side projects — for clients, parishes, businesses and for fun.</p>
+        <p class="count"><span id="project-count">12</span><small>projects</small></p>
+      </section>
+
+      <!--
+        To add a project: copy one <article> block below, paste it at the top,
+        and replace its id (e.g. p7) with a new unique one (p13, p14, …) everywhere
+        it appears: both commandfor attributes, the dialog id, aria-labelledby
+        and the h2 id. Put the screenshot in the projects/ folder.
+      -->
+      <section class="projects">
+        <!-- PROJECT 1 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p1" command="show-modal" aria-label="Open buymeachinesetakeaweay.com - Fan Redirect Support Page">
+            <div class="thumb"><img src="projects/buymeachinesetakeaweay-com-2026-scaled-bca64c.jpg" alt="buymeachinesetakeaweay.com - Fan Redirect Support Page" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Marko (Fan Project)</p>
+              <h2>buymeachinesetakeaweay.com - Fan Redirect Support Page</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p1" class="project-modal" closedby="any" aria-labelledby="p1-title">
+            <button type="button" class="close" commandfor="p1" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/buymeachinesetakeaweay-com-2026-scaled-bca64c.jpg" alt="buymeachinesetakeaweay.com - Fan Redirect Support Page" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Marko (Fan Project)</p>
+                <h2 id="p1-title">buymeachinesetakeaweay.com - Fan Redirect Support Page</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/buymeachinesetakeaweay-com-fan-redirect-support-page/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 2 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p2" command="show-modal" aria-label="Open dje.ba (Đes’ ba?) Private Link Shortner and Management">
+            <div class="thumb"><img src="projects/dje-ba-2026-scaled-e9013e.jpg" alt="dje.ba (Đes’ ba?) Private Link Shortner and Management" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Marko (Personal Project)</p>
+              <h2>dje.ba (Đes’ ba?) Private Link Shortner and Management</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p2" class="project-modal" closedby="any" aria-labelledby="p2-title">
+            <button type="button" class="close" commandfor="p2" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/dje-ba-2026-scaled-e9013e.jpg" alt="dje.ba (Đes’ ba?) Private Link Shortner and Management" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Marko (Personal Project)</p>
+                <h2 id="p2-title">dje.ba (Đes’ ba?) Private Link Shortner and Management</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/dje-ba-des-ba-private-link-shortner-and-management/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 3 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p3" command="show-modal" aria-label="Open Cursillo Europe - GECC Web Site">
+            <div class="thumb"><img src="projects/cursilo-gecc-2025-scaled-a3811f.jpg" alt="Cursillo Europe - GECC Web Site" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Cursillo Europe (GECC) - Managed by Magyarországi Cursillo Alapítvány</p>
+              <h2>Cursillo Europe - GECC Web Site</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p3" class="project-modal" closedby="any" aria-labelledby="p3-title">
+            <button type="button" class="close" commandfor="p3" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/cursilo-gecc-2025-scaled-a3811f.jpg" alt="Cursillo Europe - GECC Web Site" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Cursillo Europe (GECC) - Managed by Magyarországi Cursillo Alapítvány</p>
+                <h2 id="p3-title">Cursillo Europe - GECC Web Site</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/cursillo-europe-gecc-web-site/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 4 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p4" command="show-modal" aria-label="Open Savio (savio.hr) Web Site">
+            <div class="thumb"><img src="projects/savio-2025-scaled-2b45f6.jpg" alt="Savio (savio.hr) Web Site" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Savio, obrt za poduku i uslužne djelatnosti, vl. Suzana Percela</p>
+              <h2>Savio (savio.hr) Web Site</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p4" class="project-modal" closedby="any" aria-labelledby="p4-title">
+            <button type="button" class="close" commandfor="p4" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/savio-2025-scaled-2b45f6.jpg" alt="Savio (savio.hr) Web Site" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Savio, obrt za poduku i uslužne djelatnosti, vl. Suzana Percela</p>
+                <h2 id="p4-title">Savio (savio.hr) Web Site</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/savio-savio-hr-web-site/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 5 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p5" command="show-modal" aria-label="Open Galerija Art-Blažić Web Site">
+            <div class="thumb"><img src="projects/art-blazic-2024-scaled-71dfa4.jpg" alt="Galerija Art-Blažić Web Site" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Art, Izrada okvira za slike, vl. Mladen Blažić (Galerija Art-Blažić)</p>
+              <h2>Galerija Art-Blažić Web Site</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p5" class="project-modal" closedby="any" aria-labelledby="p5-title">
+            <button type="button" class="close" commandfor="p5" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/art-blazic-2024-scaled-71dfa4.jpg" alt="Galerija Art-Blažić Web Site" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Art, Izrada okvira za slike, vl. Mladen Blažić (Galerija Art-Blažić)</p>
+                <h2 id="p5-title">Galerija Art-Blažić Web Site</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/galerija-art-blazic-web-site/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 6 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p6" command="show-modal" aria-label="Open The Place (the-place.hr) Web Site">
+            <div class="thumb"><img src="projects/the-place-2024-scaled-655421.jpg" alt="The Place (the-place.hr) Web Site" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Gastro Prestige Ltd.</p>
+              <h2>The Place (the-place.hr) Web Site</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p6" class="project-modal" closedby="any" aria-labelledby="p6-title">
+            <button type="button" class="close" commandfor="p6" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/the-place-2024-scaled-655421.jpg" alt="The Place (the-place.hr) Web Site" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Gastro Prestige Ltd.</p>
+                <h2 id="p6-title">The Place (the-place.hr) Web Site</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/the-place-hr-web-site/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 7 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p7" command="show-modal" aria-label="Open Parish of St. Barbara’s, Vrapče – Zagreb Web Site">
+            <div class="thumb"><img src="projects/zupa-vrapce-arhiva-2024-scaled-9a01c6.jpg" alt="Parish of St. Barbara’s, Vrapče – Zagreb Web Site" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Parish of St. Barbara’s, Vrapce – Zagreb</p>
+              <h2>Parish of St. Barbara’s, Vrapče – Zagreb Web Site</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p7" class="project-modal" closedby="any" aria-labelledby="p7-title">
+            <button type="button" class="close" commandfor="p7" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/zupa-vrapce-arhiva-2024-scaled-9a01c6.jpg" alt="Parish of St. Barbara’s, Vrapče – Zagreb Web Site" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Parish of St. Barbara’s, Vrapce – Zagreb</p>
+                <h2 id="p7-title">Parish of St. Barbara’s, Vrapče – Zagreb Web Site</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/parish-of-st-barbaras-vrapce-zagreb-web-site/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 8 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p8" command="show-modal" aria-label="Open Hoću na more (hocunamore.hr) Web Site">
+            <div class="thumb"><img src="projects/hocunamore-2024-scaled-f2eecb.jpg" alt="Hoću na more (hocunamore.hr) Web Site" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Šimun Emanuel Travel Ltd.</p>
+              <h2>Hoću na more (hocunamore.hr) Web Site</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p8" class="project-modal" closedby="any" aria-labelledby="p8-title">
+            <button type="button" class="close" commandfor="p8" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/hocunamore-2024-scaled-f2eecb.jpg" alt="Hoću na more (hocunamore.hr) Web Site" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Šimun Emanuel Travel Ltd.</p>
+                <h2 id="p8-title">Hoću na more (hocunamore.hr) Web Site</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/hocu-na-more-hocunamore-hr-web-site/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 9 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p9" command="show-modal" aria-label="Open Nekretnina.hr Web Site">
+            <div class="thumb"><img src="projects/nekretnina-2024-scaled-5a2db2.jpg" alt="Nekretnina.hr Web Site" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Interhaus nekretnine Ltd.</p>
+              <h2>Nekretnina.hr Web Site</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p9" class="project-modal" closedby="any" aria-labelledby="p9-title">
+            <button type="button" class="close" commandfor="p9" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/nekretnina-2024-scaled-5a2db2.jpg" alt="Nekretnina.hr Web Site" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Interhaus nekretnine Ltd.</p>
+                <h2 id="p9-title">Nekretnina.hr Web Site</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/nekretnina-hr-web-site/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 10 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p10" command="show-modal" aria-label="Open Šimun Emanuel Travels Web Site">
+            <div class="thumb"><img src="projects/xsimun-emanuel-2024-scaled-ba9f34.jpg" alt="Šimun Emanuel Travels Web Site" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Šimun Emanuel Travel Ltd.</p>
+              <h2>Šimun Emanuel Travels Web Site</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p10" class="project-modal" closedby="any" aria-labelledby="p10-title">
+            <button type="button" class="close" commandfor="p10" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/xsimun-emanuel-2024-scaled-ba9f34.jpg" alt="Šimun Emanuel Travels Web Site" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Šimun Emanuel Travel Ltd.</p>
+                <h2 id="p10-title">Šimun Emanuel Travels Web Site</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/simun-emanuel-travels-web-site/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 11 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p11" command="show-modal" aria-label="Open Kursiljo Croatia Web Site">
+            <div class="thumb"><img src="projects/kursiljo-2024-scaled-b38344.jpg" alt="Kursiljo Croatia Web Site" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Kursiljo Croatia</p>
+              <h2>Kursiljo Croatia Web Site</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p11" class="project-modal" closedby="any" aria-labelledby="p11-title">
+            <button type="button" class="close" commandfor="p11" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/kursiljo-2024-scaled-b38344.jpg" alt="Kursiljo Croatia Web Site" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Kursiljo Croatia</p>
+                <h2 id="p11-title">Kursiljo Croatia Web Site</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/kursiljo-croatia-web-site/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+        <!-- PROJECT 12 -->
+        <article>
+          <button type="button" class="project-card" commandfor="p12" command="show-modal" aria-label="Open Parish of St. Vitus, Petruševec – Zagreb Web Site">
+            <div class="thumb"><img src="projects/zupa-petrusevec-2024-scaled-bad9bb.jpg" alt="Parish of St. Vitus, Petruševec – Zagreb Web Site" loading="lazy" width="1200" height="900"></div>
+            <div class="body">
+              <p class="eyebrow">Parish of St. Vitus, Petrusevec – Zagreb</p>
+              <h2>Parish of St. Vitus, Petruševec – Zagreb Web Site</h2>
+              <span class="more">View project →</span>
+            </div>
+          </button>
+          <dialog id="p12" class="project-modal" closedby="any" aria-labelledby="p12-title">
+            <button type="button" class="close" commandfor="p12" command="close" aria-label="Close">✕</button>
+            <div class="scroll">
+              <img src="projects/zupa-petrusevec-2024-scaled-bad9bb.jpg" alt="Parish of St. Vitus, Petruševec – Zagreb Web Site" loading="lazy">
+              <div class="body">
+                <p class="eyebrow">Parish of St. Vitus, Petrusevec – Zagreb</p>
+                <h2 id="p12-title">Parish of St. Vitus, Petruševec – Zagreb Web Site</h2>
+                <a class="btn-primary" href="https://idzan.hr/project/parish-of-st-vitus-petrusevec-zagreb-web-site/" target="_blank" rel="noreferrer">Open project <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </dialog>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Marko Idžan</p>
+      <p>For more details visit <a href="https://idzan.hr/">https://idzan.hr/</a></p>
+    </footer>
+
+    <script>
+      // Theme toggle
+      document.getElementById("theme-toggle").addEventListener("click", function () {
+        var dark = document.documentElement.classList.toggle("dark");
+        try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
+      });
+
+      // Keep project count and year current
+      document.getElementById("project-count").textContent =
+        document.querySelectorAll(".projects > article").length;
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Fallback for browsers without invoker commands (command / commandfor)
+      if (!("commandForElement" in HTMLButtonElement.prototype)) {
+        document.addEventListener("click", function (e) {
+          var btn = e.target.closest("button[commandfor]");
+          if (!btn) return;
+          var dialog = document.getElementById(btn.getAttribute("commandfor"));
+          var cmd = btn.getAttribute("command");
+          if (cmd === "show-modal") dialog.showModal();
+          else if (cmd === "close") dialog.close();
+        });
+      }
+
+      // Fallback for browsers without <dialog closedby>: close on backdrop click
+      if (!("closedBy" in HTMLDialogElement.prototype)) {
+        document.querySelectorAll("dialog").forEach(function (dialog) {
+          dialog.addEventListener("click", function (e) {
+            if (e.target !== dialog) return;
+            var r = dialog.getBoundingClientRect();
+            var inside = r.top <= e.clientY && e.clientY <= r.bottom &&
+                         r.left <= e.clientX && e.clientX <= r.right;
+            if (!inside) dialog.close();
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
