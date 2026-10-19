@@ -24,3 +24,7 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Static HTML/CSS version
+
+`static/` holds a dependency-free copy of the site (`index.html`, `styles.css`, images). It needs no build step: upload the folder to any static host, or open it locally with `python3 -m http.server -d static`. To add a project, copy an `<article>` block in `static/index.html`, give it a new id, and put its image in `static/projects/`.
